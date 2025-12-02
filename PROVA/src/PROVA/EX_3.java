@@ -4,14 +4,13 @@ import java.util.ArrayList;
 
 public class EX_3 {
     public static void main(String[] args) {
-        int[] array;  // 'array' de 5 posicions amb valors aleatoris entre 0 i 9
+        int[]array = UtilExamen.generaArray(10, 0, 9);  // 'array' de 10 posicions amb valors aleatoris entre 0 i 9
         ArrayList<Integer> resultat;  // 'arraylist' resultant
+
+        resultat = UtilExamen.tornaOrdenatsSenseRepeticions(array);
         
-        // Genera un array de 10 posicions amb números aleatoris entre 0 i 9
-        
-        // Calcula l''ArrayList' emprant el mètode 'ordenaArray' 
-        
-        // Mostra l''ArrayList' resultant
+        UtilExamen.mostraArray(array);
+        UtilExamen.mostrarArrayListInt(resultat);
     }
 }
 
